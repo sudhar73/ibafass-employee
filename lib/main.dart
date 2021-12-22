@@ -4,8 +4,11 @@ import 'package:ibafass/view/notification/notification.dart';
 import 'package:ibafass/view/notification/notificationsettings.dart';
 import 'package:ibafass/view/payment/addnewcard.dart';
 import 'package:ibafass/view/payment/confirmtransfer.dart';
+import 'package:ibafass/view/payment/creditcard.dart';
 import 'package:ibafass/view/payment/payment.dart';
 import 'package:ibafass/view/payment/paymentone.dart';
+import 'package:ibafass/view/payment/savemycard.dart';
+import 'package:ibafass/view/payment/topupcreditcard.dart';
 import 'package:ibafass/view/payment/transferamountsuccess.dart';
 import 'package:ibafass/view/settingprofile.dart';
 import 'package:ibafass/view/menubar.dart';
@@ -35,6 +38,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         debugShowCheckedModeBanner: false,
-        home: AddNewCard());
+        home: Payment());
   }
 }

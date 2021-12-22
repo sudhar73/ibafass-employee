@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:ibafass/view/payment/paymentone.dart';
+import 'package:ibafass/view/payment/topupcreditcard.dart';
 
 class Creditcard extends StatefulWidget {
   const Creditcard({Key? key}) : super(key: key);
@@ -299,7 +300,13 @@ class _CreditcardState extends State<Creditcard> {
                 height: 70,
                 width: MediaQuery.of(context).size.width / 1.20,
                 child: RaisedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => TopupCreditcard()),
+                    );
+                  },
                   color: HexColor('#3D75E4'),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),

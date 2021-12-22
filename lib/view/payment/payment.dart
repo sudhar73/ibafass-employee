@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:ibafass/view/payment/creditcard.dart';
 import 'package:ibafass/view/payment/paymentone.dart';
 
 class Payment extends StatefulWidget {
@@ -160,7 +161,14 @@ class _PaymentState extends State<Payment> {
                     ),
                     Spacer(),
                     IconButton(
-                        onPressed: () {}, icon: Icon(Icons.arrow_forward_ios)),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Creditcard()),
+                          );
+                        },
+                        icon: Icon(Icons.arrow_forward_ios)),
                   ]),
                 ),
               ),
