@@ -53,7 +53,7 @@ class _TopupCreditcardState extends State<TopupCreditcard> {
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 5,
                 ),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -222,7 +222,7 @@ class _TopupCreditcardState extends State<TopupCreditcard> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
@@ -248,15 +248,13 @@ class _TopupCreditcardState extends State<TopupCreditcard> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 25.0,
-                      ),
-                      child: Text(
-                        "\$90.00",
-                        style: TextStyle(
-                            fontSize: 35, fontWeight: FontWeight.bold),
-                      ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "\$90.00",
+                      style:
+                          TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 30.0, right: 30.0),
@@ -368,7 +366,7 @@ class _TopupCreditcardState extends State<TopupCreditcard> {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     Text(
                       'Back to Home',

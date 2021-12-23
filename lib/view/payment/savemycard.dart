@@ -69,7 +69,7 @@ class _SaveMyCardState extends State<SaveMyCard> {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.only(
@@ -97,7 +97,7 @@ class _SaveMyCardState extends State<SaveMyCard> {
                   topRight: Radius.circular(40),
                   topLeft: Radius.circular(40),
                 )),
-            height: MediaQuery.of(context).size.height / 1.25,
+            height: MediaQuery.of(context).size.height / 1.22,
             width: MediaQuery.of(context).size.width,
             child: Column(
               children: [
@@ -196,7 +196,7 @@ class _SaveMyCardState extends State<SaveMyCard> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                      const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
                   child: TextFormField(
                     cursorColor: Colors.black,
                     decoration: InputDecoration(
@@ -210,7 +210,7 @@ class _SaveMyCardState extends State<SaveMyCard> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
                   child: TextFormField(
                     cursorColor: Colors.black,
                     decoration: const InputDecoration(
@@ -227,8 +227,8 @@ class _SaveMyCardState extends State<SaveMyCard> {
                     Padding(
                       padding: const EdgeInsets.only(
                         left: 30,
-                        top: 10,
-                        bottom: 10,
+                        top: 5,
+                        bottom: 5,
                       ),
                       child: Container(
                         width: MediaQuery.of(context).size.width / 2.5,
@@ -244,10 +244,10 @@ class _SaveMyCardState extends State<SaveMyCard> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 10),
+                    Spacer(),
                     Padding(
                       padding:
-                          const EdgeInsets.only(right: 30, bottom: 10, top: 10),
+                          const EdgeInsets.only(right: 30, bottom: 5, top: 5),
                       child: Container(
                         width: MediaQuery.of(context).size.width / 2.4,
                         child: TextFormField(
@@ -265,7 +265,7 @@ class _SaveMyCardState extends State<SaveMyCard> {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(10.0),

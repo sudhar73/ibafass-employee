@@ -24,36 +24,41 @@ class _PaymentOneState extends State<PaymentOne> {
                   ),
                   Align(
                     alignment: Alignment.topCenter,
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 10.0),
-                      child: Row(
-                        children: [
-                          Padding(
+                    child: Row(
+                      children: [
+                        Flexible(
+                          flex: 0,
+                          child: Padding(
                             padding: const EdgeInsets.only(left: 10.0),
                             child: Icon(
                               Icons.arrow_back_sharp,
                               color: Colors.white,
                             ),
                           ),
-                          SizedBox(
-                            width: 80,
-                          ),
-                          Center(
+                        ),
+                        Flexible(
+                          flex: 2,
+                          child: Center(
                             child: Text(
-                              'Transfer With bank',
+                              'Transfer with bank',
                               style: TextStyle(
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white),
                             ),
                           ),
-                          Spacer(),
-                          Icon(
-                            Icons.more_vert,
-                            color: Colors.white,
+                        ),
+                        Flexible(
+                          flex: 0,
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 10.0),
+                            child: Icon(
+                              Icons.more_vert,
+                              color: Colors.white,
+                            ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -237,7 +242,7 @@ class _PaymentOneState extends State<PaymentOne> {
                       padding: const EdgeInsets.only(top: 90.0),
                       child: Container(
                         height: 60,
-                        width: 300,
+                        width: MediaQuery.of(context).size.width / 1.15,
                         child: RaisedButton(
                           onPressed: () {
                             Navigator.push(
@@ -248,7 +253,7 @@ class _PaymentOneState extends State<PaymentOne> {
                           },
                           color: HexColor('#0F46B3'),
                           shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20)),
+                              borderRadius: BorderRadius.circular(18)),
                           child: Text(
                             "Continue",
                             style: TextStyle(fontSize: 20, color: Colors.white),

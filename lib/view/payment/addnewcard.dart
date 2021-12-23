@@ -134,7 +134,7 @@ class _AddNewCardState extends State<AddNewCard> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 10),
+                        Spacer(),
                         Padding(
                           padding: const EdgeInsets.only(
                               right: 30, bottom: 10, top: 10),
@@ -153,6 +153,9 @@ class _AddNewCardState extends State<AddNewCard> {
                           ),
                         ),
                       ],
+                    ),
+                    SizedBox(
+                      height: 10,
                     ),
                     Padding(
                       padding: const EdgeInsets.all(10.0),

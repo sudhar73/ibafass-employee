@@ -21,31 +21,41 @@ class _ConfirmTransferState extends State<ConfirmTransfer> {
                 SizedBox(
                   height: 40,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 10.0),
+                Align(
+                  alignment: Alignment.topCenter,
                   child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10.0),
-                        child: Icon(
-                          Icons.arrow_back_sharp,
-                          color: Colors.white,
+                      Flexible(
+                        flex: 0,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 10.0),
+                          child: Icon(
+                            Icons.arrow_back_sharp,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                      SizedBox(
-                        width: 80,
+                      Flexible(
+                        flex: 2,
+                        child: Center(
+                          child: Text(
+                            'Confirm Transfer',
+                            style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                        ),
                       ),
-                      Text(
-                        'Confirm Transfer',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
-                      Spacer(),
-                      Icon(
-                        Icons.more_vert,
-                        color: Colors.white,
+                      Flexible(
+                        flex: 0,
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 10.0),
+                          child: Icon(
+                            Icons.more_vert,
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -151,7 +161,7 @@ class _ConfirmTransferState extends State<ConfirmTransfer> {
                     padding: const EdgeInsets.all(10.0),
                     child: Container(
                       height: 60,
-                      width: 300,
+                      width: MediaQuery.of(context).size.width / 1.15,
                       child: RaisedButton(
                         onPressed: () {
                           Navigator.push(
@@ -162,7 +172,7 @@ class _ConfirmTransferState extends State<ConfirmTransfer> {
                         },
                         color: HexColor('#0F46B3'),
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
+                            borderRadius: BorderRadius.circular(18)),
                         child: Text(
                           "Transfer Money",
                           style: TextStyle(fontSize: 20, color: Colors.white),

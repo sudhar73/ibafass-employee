@@ -25,27 +25,37 @@ class _PaymentState extends State<Payment> {
               alignment: Alignment.topCenter,
               child: Row(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Icon(
-                      Icons.arrow_back_sharp,
-                      color: Colors.white,
+                  Flexible(
+                    flex: 0,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 10.0),
+                      child: Icon(
+                        Icons.arrow_back_sharp,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                  SizedBox(
-                    width: 80,
+                  Flexible(
+                    flex: 2,
+                    child: Center(
+                      child: Text(
+                        'Select Method',
+                        style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                    ),
                   ),
-                  Text(
-                    'Select Method',
-                    style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.more_vert,
-                    color: Colors.white,
+                  Flexible(
+                    flex: 0,
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 10.0),
+                      child: Icon(
+                        Icons.more_vert,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ],
               ),

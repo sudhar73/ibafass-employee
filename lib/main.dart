@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibafass/view/allemployees.dart';
+import 'package:ibafass/view/employees/holiday.dart';
 import 'package:ibafass/view/notification/notification.dart';
 import 'package:ibafass/view/notification/notificationsettings.dart';
 import 'package:ibafass/view/payment/addnewcard.dart';
@@ -38,6 +39,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         debugShowCheckedModeBanner: false,
-        home: Payment());
+        home: Holiday());
   }
 }
